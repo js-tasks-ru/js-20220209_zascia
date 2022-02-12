@@ -5,5 +5,6 @@
  * @returns {number}
  */
 export default function sum(m, n) {
-
+  if (!isNaN(+m) && !isNaN(+n)) return +m + +n;
+  return false;
 }
