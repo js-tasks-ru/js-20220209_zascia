@@ -5,4 +5,7 @@
  */
 export function createGetter(path) {
 
+  return (product) => {
+    return path.split('.').reduce((o, p) => o?.[p], product)
+  }
 }
